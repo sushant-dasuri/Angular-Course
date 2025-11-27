@@ -8,5 +8,8 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.css'
 })
 export class App {
-  protected readonly title = signal('angular_course');
+  data = {
+    title: 'Angular Core Deep Dive'
+  }
+ 
 }
