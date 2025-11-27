@@ -9,7 +9,15 @@ import { RouterOutlet } from '@angular/router';
 })
 export class App {
   data = {
-    title: 'Angular Core Deep Dive'
+    title: '<h1></h1>Angular Core Deep Dive</h1><script>alert("XSS Attack!")</script>'
+  }
+
+  onLogoClick() {
+    alert('Angular Logo Clicked!');
+  }
+
+  onKeyUp(value: string) {
+    this.data.title = value;
   }
  
 }
